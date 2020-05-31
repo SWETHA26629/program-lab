@@ -1,0 +1,28 @@
+#include<stdio.h>
+void main()
+  {
+     char str1[10],str2[10],str3[20],i=0,j=0;
+     printf("enter the first string\n");
+     scanf("%s",&str1);
+     printf("enter the second string\n");
+     scanf("%s",&str2);
+     printf("\n the first string is:%s",str1);
+     printf("\n second string is:%s",str2);
+     while(str1[j]!='\0')
+        {
+           str3[i]=str1[j];
+           i++;
+           j++;
+        }
+     j=0;
+     while(str2[j]!='\0')
+        {
+          str3[i]=str2[j];
+          i++;
+          j++;
+       }
+    str3[j]='\0';
+    printf("\n%s",str3);
+    return 0;
+ }   
+    
